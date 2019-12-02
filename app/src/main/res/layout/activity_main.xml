@@ -8,48 +8,51 @@
     tools:context=".view.activity.MainActivity">
 
     <android.support.v4.view.ViewPager
-        android:layout_weight="9"
         android:id="@+id/vp"
         android:layout_width="match_parent"
-        android:layout_height="0dp"></android.support.v4.view.ViewPager>
+        android:layout_height="0dp"
+        android:layout_weight="9"></android.support.v4.view.ViewPager>
 
     <RadioGroup
-        android:orientation="horizontal"
-        android:layout_weight="1"
         android:id="@+id/rg"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
         <RadioButton
-            android:checked="true"
-            android:background="@drawable/aaaa"
-            android:gravity="center"
-            android:text="首页"
             android:id="@+id/but1"
-            android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:background="@drawable/aaaa"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@mipmap/ic_launcher"
             android:gravity="center"
-            android:text="消息"
+            android:text="首页" />
+
+        <RadioButton
             android:id="@+id/but2"
-            android:button="@null"
-            android:drawableTop="@mipmap/ic_launcher"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:background="@drawable/aaaa"
-            android:gravity="center"
-            android:text="我的"
-            android:id="@+id/but3"
             android:button="@null"
             android:drawableTop="@mipmap/ic_launcher"
-            android:layout_weight="1"
+            android:gravity="center"
+            android:text="消息" />
+
+        <RadioButton
+            android:id="@+id/but3"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/aaaa"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="我的" />
     </RadioGroup>
 
 </LinearLayout>
